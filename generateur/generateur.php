@@ -12,7 +12,7 @@ if (!empty($_POST['images'])) {
   <meta name="keywords" content="maternelle, école, primaire, images séquentielles">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/generateur.bundle.css">
   <link rel="canonical" href="http://micetf.fr/images-sequentielles">
 
   <script src="../library/js/modernizr-2.5.3.min.js"></script>
@@ -62,7 +62,7 @@ if (!empty($_POST['images'])) {
   <script src="../library/js/jquery-ui.js"></script>
   <script src="../library/js/jquery.ui.touch-punch.min.js"></script>
   <script src="../library/js/jquery.contact.js"></script>
-  <script src="js/scriptgenerateur.js"></script>
+  <script src="js/generateur.bundle.js"></script>
 
 </body>
 </html>

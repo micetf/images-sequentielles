@@ -10,7 +10,10 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = (env, argv) => {
     const isDev = () => argv.mode === "development";
 
-    const entry = "./src/index.js";
+    const entry = {
+        index: "./src/index.js",
+        generateur: "./generateur/generateur.js",
+    };
 
     const output = {
         path: path.resolve(__dirname, "build"),
@@ -143,6 +146,7 @@ module.exports = (env, argv) => {
         }),
         new HtmlWebpackPlugin({
             template: "index.html",
+            excludeChunks: ["generateur"],
         }),
         new BundleAnalyzerPlugin({
             openAnalyzer: false,

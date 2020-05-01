@@ -4,7 +4,7 @@ if (!file_exists($chemin)) mkdir($chemin);
 
 $zip = new ZipArchive;
 $archive=$chemin.'/images.zip';
-if ($zip->open($archive, ZipArchive::OVERWRITE) !== TRUE) {
+if ($zip->open($archive, ZipArchive::CREATE) !== TRUE) {
 	die("Impossible de créer l'archive");
 }
 
