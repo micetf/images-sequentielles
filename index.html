@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr">
+<html lang="fr">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Images Séquentielles</title>
         <meta
             name="description"
@@ -11,166 +12,8 @@
             name="keywords"
             content="maternelle, école, primaire, images séquentielles"
         />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="canonical" href="http://micetf.fr/images-sequentielles" />
-        <script src="../library/js/modernizr-2.5.3.min.js"></script>
     </head>
     <body>
-        <header>
-            <h1>Images séquentielles</h1>
-            <p>
-                Créé par
-                <a href="http://micetf.fr" title="Des Outils Pour La Classe"
-                    >MiCetF</a
-                >
-                (2012) - <a id="contact" href="#">contact</a> -
-                <a
-                    href="generateur.php"
-                    title="Pour générer un dossier d'images séquentielles respectant les règles de nommage."
-                    >Générateur</a
-                >
-            </p>
-        </header>
-        <div role="main">
-            <div id="accueil">
-                <p>
-                    <label for="images"
-                        >Utilise les images préparées par ton enseignant<sup
-                            >*</sup
-                        >
-                        :
-                    </label>
-                    <input
-                        type="button"
-                        id="importer"
-                        value="Importer les images"
-                    />
-                    <input
-                        type="file"
-                        id="images"
-                        name="images"
-                        multiple
-                        accept="image/jpeg, image/png"
-                    />
-                </p>
-                <blockquote>
-                    <sup>*</sup>Préparer entre 3 et 12 images dans un dossier.
-                    Les images doivent être nommées de telle sorte que l'ordre
-                    alphabétique corresponde à l'ordre chronologique attendu.
-                    L'application web
-                    <a href="generateur.php">Générateur</a> peut vous aider dans
-                    cette tâche.
-                </blockquote>
-                <p id="choix">Utilise les images séquentielles de MiCetF :</p>
-                <ul id="exemples">
-                    <li class="separateur">4 images :</li>
-                    <li>
-                        <span id="bonhomme" data-qte="4"
-                            >Bonhomme de neige</span
-                        >
-                    </li>
-                    <li class="separateur">6 images :</li>
-                    <li>
-                        <span id="hiver" data-qte="6"
-                            >Chanson pour les enfants l'hiver (Jacques
-                            Prévert)</span
-                        >
-                    </li>
-                    <li>
-                        <span id="histoire1" data-qte="6"
-                            >Personnages historiques</span
-                        >
-                    </li>
-                    <li class="separateur">9 images :</li>
-                    <li>
-                        <span id="troiscochons" data-qte="9"
-                            >Les trois petits cochons</span
-                        >
-                    </li>
-                    <li>
-                        <span id="troisgrainsriz" data-qte="9"
-                            >Les 3 grains de riz</span
-                        >
-                    </li>
-                    <li>
-                        <span id="planetes" data-qte="9"
-                            >Le système solaire (Merci @Institlivre)</span
-                        >
-                    </li>
-                    <li class="separateur">10 images :</li>
-                    <li>
-                        <span id="loupdouzou" data-qte="10"
-                            >Loup (Olivier Douzou)</span
-                        >
-                        -
-                        <a
-                            class="target"
-                            href="http://amzn.to/TtcpqM"
-                            title="chez Amazon"
-                            >L'album</a
-                        >
-                    </li>
-                    <li>
-                        <span id="croque" data-qte="10"
-                            >Je m'habille et... je te croque (Bénédicte
-                            Guettier)</span
-                        >
-                        -
-                        <a
-                            class="target"
-                            href="http://amzn.to/RriqZg"
-                            title="chez Amazon"
-                            >L'album</a
-                        >
-                    </li>
-                </ul>
-            </div>
-            <div id="tri">
-                <p>
-                    <span id="exemple"></span>
-                    <span id="retour">Accueil</span> -
-                    <span id="chrono"
-                        ><input type="button" value="0 min 00 s"
-                    /></span>
-                </p>
-                <table>
-                    <tr id="sequence">
-                        <td></td>
-                    </tr>
-                </table>
-
-                <p id="consigne">
-                    <span
-                        >Remets ces images dans l'ordre chronologique et
-                    </span>
-                    <input type="button" id="valider" value="valide" />
-                    <span>.</span>
-                </p>
-                <p><input type="button" id="melanger" value="Mélanger" /></p>
-                <div id="messages">
-                    <p id="juste">
-                        Bravo ! Tu as retrouvé l'ordre des images en
-                        <span></span>.
-                    </p>
-                    <p id="faux">Vérifie ! Tu as fait des erreurs.</p>
-                </div>
-            </div>
-        </div>
-        <footer></footer>
-        <input
-            type="image"
-            id="paypal"
-            style="position:fixed; bottom:0;right:0;"
-            src="../img-micetf/don.gif"
-            alt="Faire un don"
-        />
-        <script src="../library/js/jquery.js"></script>
-        <script src="../library/js/jquery-ui.js"></script>
-        <script src="../library/js/jquery.ui.touch-punch.min.js"></script>
-        <script src="../js-micetf/contact.js"></script>
-        <script src="../js-micetf/paypal.js"></script>
-        <script src="js/outils.js"></script>
-        <script src="js/script.js"></script>
+        <div id="app"></div>
     </body>
 </html>

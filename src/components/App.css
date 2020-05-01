@@ -1,0 +1,82 @@
+body {
+    background-color: #536E7D;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+
+table {
+    width: 95%;
+    margin: auto;
+}
+
+#sequence {
+    width: 95%;
+    margin: auto;
+    height: 300px;
+    background-color: #1A3540;
+    empty-cells: show;
+}
+
+#sequence canvas {
+    margin: 4px;
+    padding: 4px;
+    border: 1px solid #1A3540;
+}
+
+#messages>*,
+#melanger,
+#consigne {
+    display: none;
+}
+
+
+#donnees {
+    display: none;
+}
+
+.placeholder {
+    background-color: #1A3540;
+    width: 95%;
+}
+
+#choix,
+label[for=images] {
+    font-weight: bold;
+    color: white;
+}
+
+#choix {
+    margin-top: 30px;
+}
+
+#exemples li span {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#exemples li span:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+#tri,
+#images {
+    display: none;
+}
+
+
+sup {
+    font-weight: bold;
+}
+
+#chrono input {
+    width: 150px;
+}
+
+canvas {
+    cursor: pointer;
+}
