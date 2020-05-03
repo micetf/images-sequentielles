@@ -12,7 +12,6 @@ module.exports = (env, argv) => {
 
     const entry = {
         index: "./src/index.js",
-        generateur: "./generateur/generateur.js",
     };
 
     const output = {
@@ -146,7 +145,6 @@ module.exports = (env, argv) => {
         }),
         new HtmlWebpackPlugin({
             template: "index.html",
-            excludeChunks: ["generateur"],
         }),
         new BundleAnalyzerPlugin({
             openAnalyzer: false,

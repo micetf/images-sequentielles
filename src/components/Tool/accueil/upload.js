@@ -11,7 +11,7 @@ const Consignes = () => (
             <sup>*</sup>Préparer entre 3 et 12 images dans un dossier. Les
             images doivent être nommées de telle sorte que l'ordre alphabétique
             corresponde à l'ordre chronologique attendu. L'application web{" "}
-            <a href="generateur.php" target="_blank">
+            <a href="./generateur" target="_blank">
                 Générateur
             </a>{" "}
             peut vous aider dans cette tâche.
