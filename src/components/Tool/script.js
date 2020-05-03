@@ -5,6 +5,26 @@ import "jquery-ui-touch-punch/jquery.ui.touch-punch.min";
 
 import chronometre from "./utils/chronometre";
 
+// const _loadFileServer = async (file) =>
+//     new Promise((resolve, reject) => {
+//         import(file)
+//             .then((res) => resolve(res.default))
+//             .catch((error) => reject(error));
+//     });
+
+// const _loadFileClient = async (file) =>
+//     new Promise((resolve, reject) => {
+//         const reader = new FileReader();
+//         reader.onload = (event) => resolve(event.target.result);
+//         reader.onerror = (event) => reject(event);
+//         reader.readAsDataURL(file);
+//     });
+// const _loadImage = async (src) =>
+//     new Promise((resolve, reject) => {
+//         const img = new Image();
+//         img.src = src;
+//         img.onload = () => resolve(img);
+//     });
 export default () => {
     let serie;
 
@@ -77,7 +97,6 @@ export default () => {
                     .append(
                         '<td class="text-light text-center w-100"><h5 class="m-auto">Patientez, chargement des images !</h5></td>'
                     );
-                $("#exemple").text("Mes images");
                 (function () {
                     var i;
                     for (i = 0; i < nbreImages; i += 1) {
@@ -175,6 +194,7 @@ export default () => {
             mesImages = lecture.images;
             nbreImages = lecture.nbreImages;
 
+            $("#exemple").text("Mes images");
             chargement(imagesFromClient);
         });
 
